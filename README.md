@@ -1,73 +1,47 @@
+# 📦 Flipkart Customer Review Sentiment Analysis
 
-# 📦 Flipkart Customer Reviews Sentiment Analysis
-
-Analyze Flipkart product reviews to uncover customer sentiment using Natural Language Processing (NLP) techniques. This project leverages a **tabular dataset** of customer reviews and ratings to explore satisfaction trends, generate sentiment scores, and visualize key insights.
-
----
-
-## 🔍 Project Overview
-
-- **Dataset Type**: Tabular (Text reviews, ratings, product metadata)
-- **Goal**: Identify sentiment trends and customer satisfaction insights
-- **Techniques Used**: NLP, sentiment scoring (VADER, TextBlob), data visualization
+This project explores customer reviews from Flipkart to uncover hidden insights about user sentiment. Using natural language processing and machine learning techniques, it aims to classify customer sentiments and enable data-driven improvements in customer experience.
 
 ---
 
-## 🚀 Key Features
+## 🎯 Objectives
 
-- 📊 **Data Exploration**  
-  Clean, preprocess, and analyze Flipkart product reviews in tabular format.
-
-- 💬 **Sentiment Analysis**  
-  Apply **VADER** and **TextBlob** to classify review sentiment as positive, negative, or neutral.
-
-- 📈 **Visualization**  
-  Use plots to understand sentiment distribution, ratings, review lengths, and more.
-
-- ☁️ **Word Clouds**  
-  Visualize frequently used terms in both positive and negative reviews.
+- Perform Exploratory Data Analysis (EDA) on Flipkart customer support data.
+- Clean, preprocess, and visualize customer feedback trends.
+- Build sentiment classification models to identify positive, negative, or neutral feedback.
+- Evaluate model performance using various metrics and techniques.
+- Provide actionable insights for improving customer satisfaction.
 
 ---
 
-## 🛠️ Tech Stack
+## 📊 Use Cases
 
-- **Languages**: Python  
-- **Libraries**:  
-  - Data: `pandas`, `numpy`  
-  - NLP: `nltk`, `textblob`  
-  - Visualization: `matplotlib`, `seaborn`, `wordcloud`
-
----
-
-## ✅ Future Enhancements
-
-- 🤖 Add deep learning-based models (e.g., **BERT**, **LSTM**) for improved sentiment detection
-- ✨ Enhance preprocessing (handle emojis, spelling correction, slang detection)
-- 🌐 Build an interactive **Streamlit dashboard** to explore results visually
+- **Customer Satisfaction Monitoring**: Automatically classify and track customer sentiments.
+- **Product Feedback Loop**: Analyze product reviews to guide product improvement.
+- **Customer Support Optimization**: Identify areas with frequent negative feedback.
+- **Dashboard Integration**: Feed insights into business intelligence tools for decision-making.
 
 ---
 
-## 🧠 Why This Project?
+## 🧠 Techniques Used
 
-Customer reviews are goldmines of insight. Analyzing sentiment helps businesses:
-
-- Detect dissatisfaction early
-- Optimize product features and descriptions
-- Understand what drives customer delight
+- **NLP**: Text cleaning, tokenization, stopword removal, lemmatization.
+- **EDA**: Word clouds, class imbalance plots, keyword frequencies.
+- **Modeling**:
+  - Classical ML: Logistic Regression, SVM, Random Forest, etc.
+  - Evaluation: Accuracy, Precision, Recall, F1-score.
+- **Libraries**: `pandas`, `seaborn`, `scikit-learn`, `matplotlib`, `nltk`, `wordcloud`, `textblob`
 
 ---
 
 ## 📁 Repository Structure
 
-```
-Flipkart_Project/
-├── Flipkart_Project.ipynb   # Main notebook with analysis and visualizations
-├── data/                    # (Optional) Folder to store datasets
-└── README.md                # Project documentation
-```
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+```bash
+Flipkart-Project/
+├── data/                      # Raw and cleaned datasets
+├── notebooks/
+│   ├── last_version_EDA.ipynb     # Exploratory Data Analysis
+│   └── last_version_model.ipynb   # Model building and evaluation
+├── results                     # final results 
+├── requirements.txt          # Dependencies
+└── README.md                 # Project overview
